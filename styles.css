@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 400px; /* 20 boxes per row x 20px = 40 rows x 20 = 800 */
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  background: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  transition: background 1s ease, box-shadow 1s ease; /* slow fade back */
+}
+
+.square:hover {
+  transition-duration: 0s; /* instant color on hover */
+}
